@@ -1,0 +1,17 @@
+.home-header {
+    background-color: $color-light-pink;
+    padding: 1.2rem 0;
+  
+    &__container {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 10vh 4vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-height: 80px;
+        }
+    }
+}
