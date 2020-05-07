@@ -1,0 +1,9 @@
+<nav class="navigation">
+    <ul class="navigation__list">
+        {% for item in site.data.navigation %}
+            <li class="navigation__item">
+                <a href="{{ item.link }}" class="navigation__link" target="_blank" rel="noopener">{{ item.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

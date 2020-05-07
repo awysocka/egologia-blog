@@ -1,0 +1,9 @@
+- name: Główna
+  link: /
+- name: O mnie
+  link: /
+- name: Kontakt
+  link: /
+- name: Kategorie
+  link: /
+  

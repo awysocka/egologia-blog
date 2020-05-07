@@ -1,0 +1,28 @@
+.navigation {
+    padding: 0 4vw;
+
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+        font-size: 2.2rem;
+        white-space: nowrap; 
+    }
+
+    &__item {
+        
+        &:not(:first-child):before {
+            content: "";
+            color: $color-blue;
+            padding: 1rem;
+        }
+    }
+
+    &__link {
+        color: $color-blue;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: .5rem;
+    }
+}
