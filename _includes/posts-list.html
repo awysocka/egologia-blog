@@ -1,0 +1,25 @@
+{% for post in site.posts %}
+
+    <article class="post">
+        <div class="post__content">
+            <a href="{{ post.url }}" class="post__img-link">
+                <div class="post__img" style="background-image: url({{ site.baseurl }}{{ post.cover }})"></div>
+            </a>
+            <div class="post__description">
+                <a href="{{ post.url }}" class="post__description-link">
+                    <div class="post-header">
+                        <span class="post-tag">{{ post.tag }}</span>
+                        <h2 class="post-title">{{ post.title }}</h2>
+                    </div>
+                    <div class="post-excerpt">
+                        <p>{{ post.content | strip_html | truncatewords: 28 }}</p>
+                    </div>
+                </a>
+                <div class="post-info">
+                    <span class="reading-time">Czas czytania: 2min</span>
+                </div>
+            </div>
+        </div>
+    </article>
+
+{% endfor %} 
