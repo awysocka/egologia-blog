@@ -1,25 +1,22 @@
 .posts {
-    padding: 0 4vw;
+    // padding: 0 4vw;
 
     &__container {
-        max-width: 1040px;
-        margin: 0 auto;
-        padding-top: 2rem;
+        max-width: 1080px;
+        margin: 2rem auto;
+        padding: 0 1rem;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
     }
 }
 
 .post {
-    width: 100%;
     min-height: 300px;
-    margin-bottom: 2rem;
+    margin: 1rem;
     background: $color-white;
     border-radius: 5px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    flex: 1 1 300px;
     
     &__img {
         width: auto;
@@ -72,4 +69,3 @@
     }   
 }
 
-    

@@ -6,9 +6,9 @@
     &__container {
         font-size: 1.4rem;
         font-weight: 300;
-        max-width: 1040px;
+        max-width: 1080px;
         margin: 0 auto;
-        padding: 0 4vw;
+        padding: 0 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -50,3 +50,23 @@
     }
 }
 
+// MEDIA QUERIES
+
+@include respond(tab-port) {
+
+    .footer {
+
+        &__container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__copyright {
+            text-align: start;
+        }
+    }
+    
+
+    
+     
+ }
