@@ -1,0 +1,75 @@
+// HAMBURGER
+
+.hamburger {
+    position: fixed;
+    top: 5vw;
+    right: 5vw;
+    display: inline-block;
+    cursor: pointer;
+    background-color: $color-blue;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+.hamburger__box {
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.hamburger__inner {
+    @include hamburger-line;
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color .1s .2s ease-in-out;
+}
+
+.hamburger__inner::before,
+.hamburger__inner::after {
+    @include hamburger-line;
+
+    content: "";
+    left: 0;
+    transition: transform .3s ease-in-out;
+}
+
+.hamburger__inner::before {
+    top: -10px;
+}
+
+.hamburger__inner::after {
+    top: 10px;
+}
+
+.hamburger--active .hamburger__inner {
+    background-color: transparent;
+
+}
+
+.hamburger--active .hamburger__inner::before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger--active .hamburger__inner::after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+
+// MEDIA QUERIES
+
+@include respond(tab-port) {
+
+    .hamburger {
+
+        display: none;
+    } 
+
+    .close {
+        display: none;
+    }
+ }

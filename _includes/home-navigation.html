@@ -1,8 +1,9 @@
-<nav class="navigation">
-    <ul class="navigation__list">
+<nav class="navigation" id="navigation">
+    
+    <ul class="navigation__list" id="nav-list">
         {% for item in site.data.navigation %}
             <li class="navigation__item">
-                <a href="{{ item.link }}" class="navigation__link" target="_blank" rel="noopener">{{ item.name }}</a>
+                <a href="{{ item.link }}" class="navigation__link" rel="noopener">{{ item.name }}</a>
             </li>
         {% endfor %}
     </ul>
@@ -12,3 +13,4 @@
         <li class="social-media__item"><a href="/" class="social-media__link" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
     </ul>
 </nav>
+{% include hamburger-menu.html %}

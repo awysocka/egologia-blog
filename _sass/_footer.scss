@@ -18,7 +18,7 @@
     &__copyright {
         text-align: center;
         line-height: 2.2rem;
-        margin-bottom: 1.6rem;
+        order: 2;
 
         a {
             color: $color-white;
@@ -28,10 +28,12 @@
     &__list {
         list-style-type: none;
         white-space: nowrap; 
+        margin-bottom: 1.6rem;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap; 
+        order: 1;
     }
 
     &__item {
@@ -61,8 +63,13 @@
             justify-content: space-between;
         }
 
+        &__list {
+            order: 2;
+        }
+
         &__copyright {
             text-align: start;
+            order: 1;
         }
     }
     

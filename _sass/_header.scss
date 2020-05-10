@@ -4,8 +4,8 @@
   
     &__hero {
         max-width: 1080px;
-        margin: 0 auto;
-        padding: 10vh 2rem;
+        margin: 0 auto ;
+        padding: 9vh 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -14,5 +14,9 @@
             max-height: 80px;
             height: 10vh;
         }
+    }
+
+    &__logo {
+        margin-top: 2rem;
     }
 }
