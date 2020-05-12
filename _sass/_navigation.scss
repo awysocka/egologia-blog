@@ -1,3 +1,5 @@
+//HOME NAVIGATION
+
 .navigation {
     position: fixed;
     top: 0;
@@ -119,6 +121,36 @@
             }
         }
     }
+}
+
+ 
+//PAGE NAVIGATION
+
+.page-logo {
+    display: none;
+}
+
+@include respond(tab-port) {
+    .navigation {
+
+        &__bar {
+            background-color: $color-light-pink;
+        }
+
+        &--page {
+            height: 80px;
+        }
+    
+        &__menu {
+            display: flex;
+        }
+
+    }
+
+    .page-logo {
+        display: block;
+        height: 30px;
+        margin-right: 2rem;
+    }
 
 }
- 

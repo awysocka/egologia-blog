@@ -1,5 +1,5 @@
 --- 
-# layout: post
+layout: post
 cover: assets/img/post-img.png
 title: Pierwszy post
 date: 2020-05-03 10:18:00

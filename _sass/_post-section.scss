@@ -1,5 +1,5 @@
 .posts {
-    // padding: 0 4vw;
+    flex-grow: 1;
 
     &__container {
         max-width: 1080px;
@@ -17,6 +17,10 @@
     border-radius: 5px;
     flex-direction: column;
     flex: 1 1 300px;
+
+    &__box {
+        box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+    }
     
     &__img {
         width: auto;
