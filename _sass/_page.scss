@@ -1,5 +1,5 @@
 
-.page-post {
+.page {
     padding: 0 2rem 4rem;
     background-color: $color-white;
     flex-grow: 1;
@@ -13,30 +13,6 @@
     &__header {
         text-align: center;
         padding: 6.5rem 3rem 5rem;
-    }
-
-    &__metadate {
-        font-size: 1.2rem;
-        font-weight: 700;
-        line-height: 3rem;
-        text-transform: uppercase;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $color-dark-grey;
-
-        .divider {
-            display: inline-block;
-            margin: 0 .5rem;
-        }
-    }
-
-    &__date {
-        color: $color-blue;
-    }
-
-    &__tag {
-        color: $color-blue;
     }
 
     &__title {
@@ -62,14 +38,12 @@
         align-items: center;
         justify-content: center;
     }
-
-
 }
 
-//  // MEDIA QUERIES
+// MEDIA QUERIES
 
 @include respond(tab-port) {
-    .page-post {
+    .page {
 
         &__article {
             z-index: 50;
@@ -78,10 +52,6 @@
 
         &__header {
             padding: 6.5rem 3rem 3rem;
-        }
-
-        &__metadate {
-            font-size: 1.4rem;
         }
 
         &__title {
@@ -128,8 +98,21 @@
     }
 }
 
+.no-image {
+
+    .page__content {
+        padding-top: 0;
+    }
+
+    .page__content:before,
+    .page__content:after {
+    display: none;
+    }
+
+} 
+
 @include respond(tab-land) {
-    .page-post {
+    .page {
         padding: 0 4rem 4rem;
 
         &__cover {
@@ -147,7 +130,7 @@
 
 @include respond(desktop) {
 
-    .page-post {
+    .page {
         
         &__cover {
             height: 800px;
@@ -160,3 +143,47 @@
         }
     }
 }
+
+
+//  + POST STYLES
+
+
+.page {
+
+    &__metadate {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 3rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-dark-grey;
+
+        .divider {
+            display: inline-block;
+            margin: 0 .5rem;
+        }
+    }
+
+    &__date {
+        color: $color-blue;
+    }
+
+    &__tag {
+        color: $color-blue;
+    }
+}
+
+// MEDIA QUERIES
+
+@include respond(tab-port) {
+    .page {
+
+        &__metadate {
+            font-size: 1.4rem;
+        }
+
+    }
+}
+

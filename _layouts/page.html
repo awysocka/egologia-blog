@@ -8,11 +8,6 @@ layout: default
     <div class="page__container">
         <article class="page__article {% unless page.cover %}no-image{% endunless %}">
             <section class="page__header">
-                <div class="page__metadate">
-                    <time class="page__date" datetime="{{ page.date | date:'%e %B %Y' }}">{{ page.date | date:'%e %B %Y' }}</time>
-                    <span class="divider">/</span>
-                    <a href="/" class="page__tag">{{ page.tag }}</a>
-                </div>
                 <h1 class="page__title">{{ page.title }}</h1>
             </section>
             {% if page.cover %}
@@ -26,4 +21,3 @@ layout: default
         </article>
     </div>
 </main>
-
