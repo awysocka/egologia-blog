@@ -1,43 +1,3 @@
-// .post{
-
-//     &__container {
-//         max-width: 1080px;
-//         width: 100%;
-//         margin: 0 auto;
-//         padding: 2rem;
-//     }
-
-//     &__header {
-//         max-width: 1080px;
-//         text-align: center;
-//         padding: 10rem 2rem 8rem;
-//         margin: 0 auto;
-//     }
-
-//     &__content {
-//         background-color: $color-white;
-//         font-size: 2rem;
-//         font-family: 'EB Garamond', serif;
-//         line-height: 3rem;
-//     }
-
-//     &__cover {
-//         // width: 100%;
-//         margin: 0 -10rem -165px;
-//     }
-
-//     &__md {
-//         max-width: 920px;
-//         margin: 0 auto;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-
-//     }
-
-
-
-// }
 
 .page-post {
     padding: 0 2rem 4rem;
@@ -82,7 +42,7 @@
     &__title {
         font-size: 2.9rem;
         font-weight: 700;
-        line-height: 2rem;
+        line-height: 1.15;
     }
 
     &__cover {
@@ -93,6 +53,7 @@
     }
 
     &__markdown {
+        margin: 0 auto;
         font-family: 'EB Garamond', serif;
         font-size: 1.9rem;
         line-height: 1.9;
@@ -103,4 +64,99 @@
     }
 
 
+}
+
+//  // MEDIA QUERIES
+
+@include respond(tab-port) {
+    .page-post {
+
+        &__article {
+            z-index: 50;
+            position: relative;
+        }
+
+        &__header {
+            padding: 6.5rem 3rem 3rem;
+        }
+
+        &__metadate {
+            font-size: 1.4rem;
+        }
+
+        &__title {
+            font-size: 5rem;
+        }
+
+        &__cover {
+            background-color: $color-grey;
+            height: 400px;
+            margin: 0 -2rem -100px;
+        }
+
+        &__content {
+            position: relative;
+            background-color: $color-white;
+            padding: 5rem 7rem 0; 
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 15px;
+                left: -5px;
+                width: 20px;
+                height: 200px;
+                background: rgba(39,44,49,.15);
+                transform: rotate(-5deg);
+                z-index: -1;
+                filter: blur(5px);
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 15px;
+                right: -5px;
+                width: 20px;
+                height: 200px;
+                background: rgba(39,44,49,.15);
+                transform: rotate(5deg);
+                z-index: -1;
+                filter: blur(5px);
+            }
+        }
+    }
+}
+
+@include respond(tab-land) {
+    .page-post {
+        padding: 0 4rem 4rem;
+
+        &__cover {
+            height: 600px;
+            margin: 0 -6rem -100px;
+        }
+
+        &__markdown {
+            max-width: 920px;
+            font-size: 2.2rem;
+        }
+
+    }
+}
+
+@include respond(desktop) {
+
+    .page-post {
+        
+        &__cover {
+            height: 800px;
+            margin: 0 -10rem -165px;
+            border-radius: 5px;
+        }
+
+        &__content {
+            padding: 7rem 10rem 0;
+        }
+    }
 }
