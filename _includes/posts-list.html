@@ -16,7 +16,14 @@
                     </div>
                 </a>
                 <div class="post-info">
-                    <span class="reading-time">Czas czytania: 2min</span>
+                    <span class="reading-time">
+                        {% assign words = post.content | strip_html | number_of_words %}
+                        {% if words <= 200 %}
+                        Czas czytania: 1 min
+                        {% else %}
+                        Czas czytania: {{ words | divided_by: 200 }} min
+                        {% endif %}
+                    </span>
                 </div>
             </div>
         </div>
