@@ -20,3 +20,19 @@
         margin-top: 2rem;
     }
 }
+
+@include respond(tab-land) {
+    .home-header {
+        padding-bottom: 80px;
+    }
+}
+
+@include respond(desktop) {
+
+    .home-header {
+        &__hero {
+            padding: 12vh 2rem ;
+        }
+    }
+}
+

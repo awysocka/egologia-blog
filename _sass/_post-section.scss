@@ -1,75 +1,136 @@
 .posts {
+    padding-top: 2rem;
     flex-grow: 1;
 
     &__container {
         max-width: 1080px;
-        margin: 2rem auto;
+        margin: 0 auto;
         padding: 0 1rem;
         display: flex;
         flex-wrap: wrap;
     }
-}
 
-.post {
-    min-height: 300px;
-    margin: 1rem;
-    background: $color-white;
-    border-radius: 5px;
-    flex-direction: column;
-    flex: 1 1 300px;
-
-    &__box {
+    .post {
+        min-height: 300px;
+        margin: 1rem;
+        background: $color-white;
+        border-radius: 5px;
         box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
-    }
+        flex: 1 1 300px;
+
+        &__img-link {
+            display: block;
+            overflow: hidden;
+            border-radius: 5px 5px 0 0;
+        }
+
+        &__img {
+            width: auto;
+            height: 200px;
+            background: $color-grey no-repeat 50%;
+            background-size: cover;
+        }
+
+        &__description {
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+
+            &-link {
+                color: $color-black ;
     
-    &__img {
-        width: auto;
-        height: 250px;
-        background-size: cover;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        border-radius: 5px 5px 0 0;
-    }
-
-    &__description {
-        padding: 2.5rem;
-
-        &-link {
-            color: $color-black ;
-
-            .post-tag {
+                .post-tag {
+                    font-size: 1.2rem;
+                    color: $color-grey;
+                    text-transform: uppercase;
+                    letter-spacing: .5px;
+                    margin-bottom: .5rem;
+                    display: block;
+                }
+    
+                .post-title {
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    letter-spacing: .5px;
+                    margin-bottom: 1rem;
+                }
+    
+                .post-excerpt {
+                    font-size: 1.6rem;
+                    font-family: 'EB Garamond', serif;
+                    letter-spacing: .5px;
+                    line-height: 2.2rem;
+                    margin-bottom: 4rem;
+                }
+            }
+                
+            .post-info {
                 font-size: 1.2rem;
                 color: $color-grey;
                 text-transform: uppercase;
                 letter-spacing: .5px;
-                margin-bottom: .5rem;
-                display: block;
-            }
+                text-align: end;
+            } 
+        }
+    }
+}
 
-            .post-title {
-                font-size: 1.8rem;
-                font-weight: 700;
-                letter-spacing: .5px;
-                margin-bottom: 1rem;
-            }
+@include respond(tab-land) {
 
-            .post-excerpt {
-                font-size: 1.6rem;
-                font-family: 'EB Garamond', serif;
-                letter-spacing: .5px;
-                line-height: 2.2rem;
-                margin-bottom: 4rem;
-            }
+    .posts {
+        margin-top: -70px;
+        padding-top: 0;
+
+        &__container {
+            padding: 0 2rem;
         }
 
-        .post-info {
-            font-size: 1.2rem;
-            color: $color-grey;
-            text-transform: uppercase;
-            letter-spacing: .5px;
-            text-align: end;
-            display: block;
-        } 
-    }   
+        .post {
+            margin: 0 2rem 4rem;
+            transition: all 0.5s ease;
+        
+            &:hover {
+                box-shadow: 0 0 1px rgba(39,44,49,0.10), 0 3px 16px rgba(39, 44, 49,0.07);
+                transition: all 0.3s ease;
+                transform: translate3D(0, -1px, 0);
+            }
+    
+            &:nth-child(6n+1) {
+                display: flex;
+                flex-direction: row;
+                flex: 1 1 100%;
+    
+                .post__img-link {
+                    position: relative;
+                    flex: 1 1 auto;
+                    border-radius: 5px 0 0 5px;
+                }
+        
+                .post__img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+        
+                .post__description {
+                    padding: 2.5rem 4rem;
+                    flex: 0 1 357px;
+                }
+
+                .post-title {
+                    font-size: 2.4rem;
+                }
+    
+                .post-excerpt {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }  
 }
+
+
+
 

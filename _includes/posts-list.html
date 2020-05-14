@@ -1,7 +1,6 @@
 {% for post in site.posts %}
 
     <article class="post">
-        <div class="post__box">
             <a href="{{ post.url }}" class="post__img-link">
                 <div class="post__img" style="background-image: url({{ site.baseurl }}{{ post.cover }})"></div>
             </a>
@@ -19,14 +18,13 @@
                     <span class="reading-time">
                         {% assign words = post.content | strip_html | number_of_words %}
                         {% if words <= 200 %}
-                        Czas czytania: 1 min
+                            Czas czytania: 1 min
                         {% else %}
-                        Czas czytania: {{ words | divided_by: 200 }} min
+                            Czas czytania: {{ words | divided_by: 200 }} min
                         {% endif %}
                     </span>
                 </div>
             </div>
-        </div>
     </article>
 
 {% endfor %} 

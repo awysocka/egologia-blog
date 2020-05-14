@@ -123,6 +123,11 @@
     }
 }
 
+@include respond(tab-land) {
+    .navigation {
+        padding: 0 4rem;
+    }
+}
  
 //PAGE NAVIGATION
 
@@ -130,7 +135,7 @@
     display: none;
 }
 
-//  // MEDIA QUERIES
+// MEDIA QUERIES
 
 @include respond(tab-port) {
     .navigation {
@@ -154,5 +159,9 @@
         height: 30px;
         margin-right: 2rem;
     }
+
+}
+
+@include respond(tab-land) {
 
 }
