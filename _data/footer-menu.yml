@@ -1,8 +1,8 @@
 - name: Ostatnie posty
   link: /
 - name: Facebook
-  link: /
+  link: https://www.facebook.com/
 - name: Instagram
-  link: /
+  link: https://www.instagram.com
 - name: Twitter
   link: /
