@@ -15,7 +15,7 @@
     }
 
     &__copyright {
-        font-size: 1.4rem;
+        font-size: $font-size-m;
         text-align: center;
         line-height: 2.2rem;
         order: 2;
@@ -37,7 +37,7 @@
     }
 
     &__item {
-        font-size: 1.4rem;
+        font-size: $font-size-m;
         margin-bottom: 1rem;
 
         &:not(:first-child):before {

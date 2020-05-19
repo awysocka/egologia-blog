@@ -16,7 +16,7 @@
     }
 
     &__title {
-        font-size: 2.9rem;
+        font-size: 3* $font-size-s;
         font-weight: 700;
         line-height: 1.15;
     }
@@ -30,8 +30,9 @@
 
     &__markdown {
         margin: 0 auto;
-        font-family: 'EB Garamond', serif;
-        font-size: 1.9rem;
+        font-family: $font-family-content;
+        color: $color-dark-grey;
+        font-size: $font-size-l;
         line-height: 1.9;
         display: flex;
         flex-direction: column;
@@ -66,12 +67,9 @@
 
         &__title {
             display: block;
-            text-transform: capitalize;
-           
+            text-transform: capitalize;  
         }
-
-    }
-        
+    }      
 }
 
 // MEDIA QUERIES
@@ -89,7 +87,7 @@
         }
 
         &__title {
-            font-size: 5rem;
+            font-size: 5* $font-size-s;
         }
 
         &__cover {
@@ -140,10 +138,7 @@
             }
         }
     }
-
 }
-
-
 
 .no-image {
 
@@ -155,7 +150,6 @@
     .page__content:after {
     display: none;
     }
-
 } 
 
 @include respond(tab-land) {
@@ -169,7 +163,7 @@
 
         &__markdown {
             max-width: 920px;
-            font-size: 2.2rem;
+            font-size: $font-size-xl;
         }
 
     }
@@ -198,7 +192,7 @@
 .page {
 
     &__metadate {
-        font-size: 1.2rem;
+        font-size: $font-size-m;
         font-weight: 700;
         line-height: 3rem;
         text-transform: uppercase;
@@ -228,9 +222,8 @@
     .page {
 
         &__metadate {
-            font-size: 1.4rem;
+            font-size: $font-size-m;
         }
-
     }
 }
 

@@ -42,7 +42,8 @@
                 color: $color-black ;
     
                 .post-tag {
-                    font-size: 1.2rem;
+                    font-size: 2* $font-size-xs;
+                    font-weight: 500;
                     color: $color-grey;
                     text-transform: uppercase;
                     letter-spacing: .5px;
@@ -51,23 +52,23 @@
                 }
     
                 .post-title {
-                    font-size: 1.8rem;
+                    font-size: 2* $font-size-s;
                     font-weight: 700;
                     letter-spacing: .5px;
                     margin-bottom: 1rem;
                 }
     
                 .post-excerpt {
-                    font-size: 1.6rem;
-                    font-family: 'EB Garamond', serif;
+                    font-size: $font-size-m;
+                    font-family: $font-family-content;
                     letter-spacing: .5px;
-                    line-height: 2.2rem;
+                    line-height: 2.8rem;
                     margin-bottom: 4rem;
                 }
             }
                 
             .post-info {
-                font-size: 1.2rem;
+                font-size: 2* $font-size-xs;
                 color: $color-grey;
                 text-transform: uppercase;
                 letter-spacing: .5px;
@@ -129,18 +130,16 @@
                     }
     
                     .post-title {
-                        font-size: 2.4rem;
+                        font-size: $font-size-xl;
                     }
         
                     .post-excerpt {
-                        font-size: 2rem;
+                        font-size: 2* $font-size-s;
                     }
                 }
             }
         }  
-
-    }
-    
+    } 
 }
 
 
