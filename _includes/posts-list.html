@@ -1,8 +1,7 @@
-{% for post in site.posts %}
 
     <article class="post">
             <a href="{{ post.url }}" class="post__img-link">
-                <div class="post__img" style="background-image: url({{ site.baseurl }}{{ post.cover }})"></div>
+                <div class="post__img" style="background-image: url(/{{ site.baseurl }}{{ post.cover }})"></div>
             </a>
             <div class="post__description">
                 <a href="{{ post.url }}" class="post__description-link">
@@ -27,4 +26,3 @@
             </div>
     </article>
 
-{% endfor %} 

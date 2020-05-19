@@ -40,6 +40,40 @@
     }
 }
 
+.tag-template {
+    .page {
+
+        &__header {
+            background: $color-light-green no-repeat 50% ;
+            background-size: cover;
+            color: $color-light-pink;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        &__header-content {
+            min-height: 150px;
+            max-height: 450px;
+            padding: 1.2rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 10vw 4vw;
+            text-align: center;
+        }
+
+        &__title {
+            display: block;
+            text-transform: capitalize;
+           
+        }
+
+    }
+        
+}
+
 // MEDIA QUERIES
 
 @include respond(tab-port) {
@@ -96,7 +130,20 @@
             }
         }
     }
+
+    .tag-template {
+
+        .page {
+    
+            &__header {
+                padding: 3rem;
+            }
+        }
+    }
+
 }
+
+
 
 .no-image {
 

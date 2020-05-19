@@ -1,11 +1,14 @@
 --- 
 layout: default
+class: home-template
 --- 
 
 {% include header.html %}
 
-<main class="posts">
+<main class="posts ">
     <div class="posts__container">
-        {% include posts-list.html %}
+        {% for post in site.posts %}
+            {% include posts-list.html %}
+        {% endfor %}   
     </div>
 </main>

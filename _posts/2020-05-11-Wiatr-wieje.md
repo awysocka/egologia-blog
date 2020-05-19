@@ -3,7 +3,7 @@ layout: post
 cover: assets/img/post-img.png
 title: Wieje wiatr
 date: 2020-05-11 10:18:00
-tag: nowy
+tag: pogoda
 ---
 
 
