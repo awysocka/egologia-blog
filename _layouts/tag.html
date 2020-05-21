@@ -16,7 +16,7 @@ layout: default
         {% assign filtered_posts = site.posts | where: 'tag', page.name %}
             {% for post in filtered_posts %}     
                 {% include posts-list.html %}
-        {% endfor %}
+            {% endfor %}
     </div>
 </main>
 

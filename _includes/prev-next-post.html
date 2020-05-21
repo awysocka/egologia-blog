@@ -1,0 +1,19 @@
+<div class="previous-next">
+    {% if page.previous.url %}
+        <a class="previous" href="{{page.previous.url}}">
+            <span class>Poprzedni post</span>
+            <h3>{{page.previous.title}}</h3>
+        </a>
+    {% else %}
+        <span class="disable">{{page.previous.title}}</span>
+    {% endif %}
+    {% if page.next.url %}
+        <a class="next" href="{{page.next.url}}">
+            <span>Następny post</span> 
+            <h3>{{page.next.title}}</h3>
+        </a>
+    {% else %}
+        <span class="disable"> {{page.next.title}}</span>
+    {% endif %}
+</div>
+  

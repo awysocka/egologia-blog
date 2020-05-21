@@ -1,11 +1,12 @@
+//Home pagination
 .pagination {
     margin: 0 auto;
     padding: 0 1rem 5rem;
-    font-size: $font-size-l;
+    font-size: $font-size-m;
     color: $color-dark-grey;
 
     a, span, .current {
-        color: $color-dark-grey;
+        color: $color-grey;
         padding: 0 .5rem;
         margin: 0 1rem;
     }
@@ -18,3 +19,61 @@
         visibility: hidden;
     }
 }
+
+//Next-Previous post
+
+.previous-next {
+    display: none;
+}
+
+@include respond(tab-port) {
+    
+    .previous-next {
+        max-width: 1080px;
+        margin:  0 auto;
+        padding-top: 5rem;
+        text-align: center;
+        font-size: $font-size-m;
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            max-width: 250px;
+            padding-top: 1rem;
+            font-size: $font-size-m;
+            font-weight: 400;
+            color: $color-blue;
+            line-height: 1.2;
+        }
+
+        .disable {
+            visibility: hidden;
+        }
+
+        span {
+            display: block;
+            color: $color-grey;
+        }
+
+        .previous {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            h3 {
+                text-align: start;
+            }
+        }
+        
+        .next {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            h3 {
+                text-align: end;
+            }
+        }
+    }
+}
+

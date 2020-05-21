@@ -1,7 +1,7 @@
 --- 
 layout: post
 cover: assets/img/post-img.png
-title: Pierwszy post
+title: Pierwszy post o tym dlaczego to piszę
 date: 2020-05-03 10:18:00
 tag: nowy
 ---

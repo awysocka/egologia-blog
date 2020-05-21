@@ -156,6 +156,11 @@
     .page {
         padding: 0 4rem 4rem;
 
+        &__container {
+            padding: 0 4rem;
+
+        }
+
         &__cover {
             height: 600px;
             margin: 0 -6rem -100px;
