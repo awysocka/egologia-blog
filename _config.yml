@@ -2,3 +2,7 @@ collections:
   tags:
     output: true
     
+
+plugins: [jekyll-paginate]
+paginate: 3
+

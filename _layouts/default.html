@@ -10,8 +10,17 @@
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-    <div class="site-container {{page.class}}">
-      {{ content }}
+      <div class="site-container {{page.class}}">
+       {{ content }}
+
+        <!-- Previous/next page links - displayed home page -->
+        {% if paginator.total_posts > site.paginate %}
+          {% if page.class == 'home-template' %}
+            {% include post-pagination.html %}
+          {% endif%}
+        {% endif %}
+
+
       {% include footer.html %}
     <script src="/js/script.js"></script>
     </div>

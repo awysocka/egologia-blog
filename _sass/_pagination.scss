@@ -1,0 +1,20 @@
+.pagination {
+    margin: 0 auto;
+    padding: 0 1rem 5rem;
+    font-size: $font-size-l;
+    color: $color-dark-grey;
+
+    a, span, .current {
+        color: $color-dark-grey;
+        padding: 0 .5rem;
+        margin: 0 1rem;
+    }
+
+    .current {
+        color:$color-blue;
+    }
+
+    .disable {
+        visibility: hidden;
+    }
+}
