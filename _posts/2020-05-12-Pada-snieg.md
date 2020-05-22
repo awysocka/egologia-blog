@@ -1,6 +1,6 @@
 --- 
 layout: post
-cover: assets/img/post-img.png
+cover: assets/img/img3.jpg
 title: Pada śnieg
 date: 2020-05-12 10:18:00
 tag: pogoda

@@ -24,6 +24,10 @@
 @include respond(tab-land) {
     .home-header {
         padding-bottom: 80px;
+
+        &__hero {
+            margin: 0 auto 4rem;
+        }
     }
 }
 
@@ -31,7 +35,7 @@
 
     .home-header {
         &__hero {
-            padding: 12vh 2rem ;
+            padding: 12vh 2rem;
         }
     }
 }

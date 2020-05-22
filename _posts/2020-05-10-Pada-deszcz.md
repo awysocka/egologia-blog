@@ -1,6 +1,6 @@
 --- 
 layout: post
-cover: assets/img/post-img.png
+cover: assets/img/img5.jpg
 title: Pada deszcz
 date: 2020-05-10 10:18:00
 tag: pogoda

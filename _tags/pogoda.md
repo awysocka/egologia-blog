@@ -2,5 +2,5 @@
 layout: tag
 name: pogoda
 class: tag-template
-cover: assets/img/weather.jpg
+cover: assets/img/img1.jpg
 ---

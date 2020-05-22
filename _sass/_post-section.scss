@@ -54,6 +54,7 @@
                 .post-title {
                     font-size: 2* $font-size-s;
                     font-weight: 700;
+                    line-height: 1.2;
                     letter-spacing: .5px;
                     margin-bottom: 1rem;
                 }
@@ -82,7 +83,6 @@
 
     .posts {
         
-        margin-top: -70px;
         padding-top: 0;
 
         &__container {
@@ -140,6 +140,13 @@
             }
         }  
     } 
+
+    .tag-template {
+
+        .posts {
+            margin-top: -60px;
+        }
+    }
 }
 
 

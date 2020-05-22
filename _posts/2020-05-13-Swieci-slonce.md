@@ -1,6 +1,6 @@
 --- 
 layout: post
-cover: assets/img/post-img.png
+cover: assets/img/img2.jpg
 title: Świeci słońce
 date: 2020-05-13 10:18:00
 tag: pogoda
