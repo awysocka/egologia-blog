@@ -1,7 +1,16 @@
 <ul class="navigation__list" id="nav-list">
     {% for item in site.data.navigation %}
         <li class="navigation__item">
-            <a href="{{ item.link }}" class="navigation__link" rel="noopener">{{ item.name }}</a>
+            {% if item.submenu %}
+                <span class="navigation__link" id="submenu-opener" rel="noopener">{{ item.name }}<span class="icon-arrow-down" ></span></span>
+                <ul class="submenu__list" id="submenu">
+                {% for subitem in item.submenu %}
+                    <li class="submenu__item"><a href="{{ subitem.link }}">{{ subitem.tag }}</a></li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                <a href="{{ item.link }}" class="navigation__link" rel="noopener">{{ item.name }}</a>
+            {% endif %}
         </li>
     {% endfor %}
 </ul>

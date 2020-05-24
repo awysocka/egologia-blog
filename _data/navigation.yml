@@ -5,5 +5,10 @@
 - name: Kontakt
   link: /contact
 - name: Kategorie
-  link: /
+  submenu:
+    - tag: nowy
+      link: /tags/nowy
+    - tag: pogoda
+      link: /tags/pogoda
+
   

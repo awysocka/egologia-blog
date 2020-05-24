@@ -23,3 +23,20 @@ const closeMenu = () => {
 for (let navLink of navLinks) {
   navLink.onclick = closeMenu;
 }
+
+// ---OPEN MOBILE SUBMENU---
+
+const submenuOpener = document.querySelector('#submenu-opener');
+const submenu = document.querySelector('#submenu');
+
+window.addEventListener('touchstart', function() {
+
+  submenuOpener.onclick = () => {
+    event.stopPropagation(); 
+    submenu.classList.toggle('submenu__list--active');
+  };
+  
+});
+
+
+
