@@ -5,7 +5,10 @@
                 <span class="navigation__link" id="submenu-opener" rel="noopener">{{ item.name }}<span class="icon-arrow-down" ></span></span>
                 <ul class="submenu__list" id="submenu">
                 {% for subitem in item.submenu %}
-                    <li class="submenu__item"><a href="{{ subitem.link }}">{{ subitem.tag }}</a></li>
+                    {% assign filtered = site.posts | where: 'tag', subitem.tag %}
+                    {% if filtered.size > 0 %}
+                        <li class="submenu__item"><a href="{{ subitem.link }}">{{ subitem.tag }}</a></li>
+                    {% endif %}
                 {% endfor %}
                 </ul>
             {% else %}

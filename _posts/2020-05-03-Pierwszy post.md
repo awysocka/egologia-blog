@@ -8,8 +8,18 @@ tag: nowy
 
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel consequat ligula. Maecenas sem tortor, tristique sed tincidunt in, accumsan eu sapien. Donec venenatis felis ut dictum commodo. 
+Hey! Welcome to Ghost, it's great to have you :)
 
-Aenean molestie turpis eu enim volutpat pellentesque in id neque. Phasellus venenatis eget justo eget maximus. Nullam facilisis aliquet ex. Suspendisse quis pretium turpis. Aliquam rutrum metus tincidunt mi laoreet, a gravida nulla imperdiet. In in hendrerit tellus. Nullam ultricies turpis vitae egestas porta. In mollis, orci non eleifend ullamcorper, lorem mauris finibus tortor, ut gravida tortor dolor quis mauris.
+We know that first impressions are important, so we've populated your new site with some initial **Getting Started** posts that will help you get familiar with everything in no time. This is the first one!
 
-Integer sit amet ex ut magna maximus egestas. Nam gravida libero urna, ut mattis arcu ultrices eu. Pellentesque vel ultrices erat. Pellentesque efficitur sapien lacus, vitae tincidunt purus condimentum quis. Praesent sit amet finibus justo. Donec condimentum eros vel condimentum aliquam. Nulla nisl libero, blandit nec facilisis ac, faucibus vitae ex. Suspendisse augue sapien, feugiat at mollis in, rhoncus nec ante. Vivamus congue elementum orci, vel tincidunt tellus congue ac. Donec rhoncus quam in justo vehicula dictum. Aenean id risus lobortis, dignissim libero tempor, molestie sem. Suspendisse dolor massa, rutrum id aliquet ut, malesuada eu orci. Aliquam accumsan bibendum efficitur. Phasellus tempus tellus vitae lacinia rhoncus. 
+### There are a few things that you should know up-front:
+1. Ghost is designed for ambitious, professional publishers who want to actively build a business around their content. That's who it works best for. If you're using Ghost for some other purpose, that's fine too - but it might not be the best choice for you.
+2. The entire platform can be modified and customized to suit your needs, which is very powerful, but doing so **does** require some knowledge of code. Ghost is not necessarily a good platform for beginners or people who just want a simple personal blog.
+3. For the best experience we recommend downloading the Ghost Desktop App for your computer, which is the best way to access your Ghost site on a desktop device.
+
+
+Ghost is made by an independent non-profit organisation called the Ghost Foundation. We are 100% self funded by revenue from our [Ghost(Pro)](https://ghost.org/pricing) service, and every penny we make is re-invested into funding further development of free, open source technology for modern journalism.
+
+The main thing you'll want to read about next is probably: [the Ghost editor](https://demo.ghost.io/the-editor/).
+
+Once you're done reading, you can simply delete the default **Ghost** user from your team to remove all of these introductory posts!
