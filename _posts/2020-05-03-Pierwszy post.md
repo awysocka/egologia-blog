@@ -4,6 +4,8 @@ cover: assets/img/img7.jpg
 title: Pierwszy post o tym dlaczego to piszę
 date: 2020-05-03 10:18:00
 tag: nowy
+class: post-template
+
 ---
 
 

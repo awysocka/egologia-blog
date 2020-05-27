@@ -1,10 +1,11 @@
 
 .page {
-    padding: 0 2rem 4rem;
+    padding: 0 0 4rem;
     background-color: $color-white;
     flex-grow: 1;
 
     &__container {
+        padding: 0 2rem;
         max-width: $max-width;
         margin: 0 auto;
         width: 100%;
@@ -39,6 +40,16 @@
         align-items: stretch;
         justify-content: center;
     }
+}
+
+.post-template {
+    .posts {
+
+        &__container {
+            padding: 0;
+        }
+    }  
+
 }
 
 .tag-template {
@@ -173,6 +184,15 @@
             font-size: $font-size-xl;
         }
 
+    }
+
+    .post-template {
+        .posts {
+            .post {
+                flex: 1 1 260px;
+            }
+        }  
+    
     }
 }
 

@@ -4,6 +4,8 @@ cover: assets/img/img6.jpg
 title: Jak zacząć
 date: 2020-05-06 10:18:00
 tag: nowy
+class: post-template
+
 ---
 
 
