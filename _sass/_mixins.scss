@@ -6,8 +6,17 @@
     border-radius: 5px;
 }
 
+@mixin pagination-item {
+    text-align: center;
+    padding: 0 .5rem;
+    margin: 0 .5rem;
+}
+
 
 @mixin respond($breakpoints) {
+    @if $breakpoints == small-phone {
+        @media screen and (max-width: 400px) {@content}
+    };
     @if $breakpoints == tab-port {
         @media screen and (min-width: 700px) {@content}
     };

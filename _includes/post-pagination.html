@@ -1,27 +1,51 @@
-<!-- pagination -->
+{% comment %} pagination {% endcomment %}
 
 {% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Poprzednia strona</a>
-  {% else %}
-    <span class="disable">Poprzednia</span>
-  {% endif %}
+  <div class="pagination">
 
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <span class="current">{{ page }}</span>
-    {% elsif page == 1 %}
-      <a href="/">{{ page }}</a>
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__array">
+        <span class="material-icons">keyboard_arrow_left</span>
+      </a>
     {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      <span class="pagination__array disable">
+        <span class="material-icons">keyboard_arrow_left</span>
+      </span>
     {% endif %}
-  {% endfor %}
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Następna strona</a>
-  {% else %}
-    <span class="disable">Następna</span>
-  {% endif %}
-</div>
+    {% if paginator.page >= 4 %}
+      <a href="/" class="pagination__item">1</a>
+    {% endif %}
+
+    {% if paginator.page > 4 %}
+      <span class="pagination__item">...</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% assign minus = paginator.page | minus: 2 %}
+      {% assign plus = paginator.page | plus: 2 %}
+      {% if page >= minus and page <= plus %}
+        {% if page == paginator.page %}
+          <span class="pagination__current">{{ page }}</span>
+        {% elsif page == 1 %}
+          <a href="/" class="pagination__item">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="pagination__item">{{ page }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    <span class="pagination__item ">z</span>
+    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages }}" class="pagination__item">{{ paginator.total_pages }}</a>
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__array"> 
+        <span class="material-icons">keyboard_arrow_right</span>
+      </a>
+    {% else %}
+      <span class="pagination__array disable">
+        <span class="material-icons">keyboard_arrow_right</span>
+      </span>
+    {% endif %}
+  </div>
 {% endif %}
