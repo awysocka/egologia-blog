@@ -6,11 +6,9 @@
   link: /contact
 - name: Kategorie
   submenu:
-    - tag: nowy
-      link: /tags/nowy
-    - tag: pogoda
-      link: /tags/pogoda
-    - tag: bezpostu
-      link: /tags/bezpostu
-
-  
+    - category: nowy
+      link: /categories/nowy
+    - category: pogoda
+      link: /categories/pogoda
+    - category: bezpostu
+      link: /categories/bezpostu

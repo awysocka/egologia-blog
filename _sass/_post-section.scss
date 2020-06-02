@@ -15,7 +15,7 @@
         margin: 0 1rem 2rem;
         background: $color-white;
         border-radius: 5px;
-        box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+        box-shadow: 8px 14px 38px rgba(39, 44, 49, .06), 1px 3px 8px rgba(39, 44, 49, .03);
         flex: 1 1 300px;
 
         &__img-link {
@@ -39,9 +39,9 @@
             flex-grow: 1;
 
             &-link {
-                color: $color-black ;
-    
-                .post-tag {
+                color: $color-black;
+
+                .post-category {
                     font-size: 2* $font-size-xs;
                     font-weight: 500;
                     color: $color-grey;
@@ -50,7 +50,7 @@
                     margin-bottom: .5rem;
                     display: block;
                 }
-    
+
                 .post-title {
                     font-size: 2* $font-size-s;
                     font-weight: 700;
@@ -58,7 +58,7 @@
                     letter-spacing: .5px;
                     margin-bottom: 1rem;
                 }
-    
+
                 .post-excerpt {
                     font-size: $font-size-m;
                     font-family: $font-family-content;
@@ -67,14 +67,14 @@
                     margin-bottom: 4rem;
                 }
             }
-                
+
             .post-info {
                 font-size: 2* $font-size-xs;
                 color: $color-grey;
                 text-transform: uppercase;
                 letter-spacing: .5px;
                 text-align: end;
-            } 
+            }
         }
     }
 }
@@ -84,7 +84,7 @@
 @include respond(tab-land) {
 
     .posts {
-        
+
         padding-top: 0;
 
         &__container {
@@ -94,9 +94,9 @@
         .post {
             margin: 0 2rem 4rem;
             transition: all 0.5s ease;
-        
+
             &:hover {
-                box-shadow: 0 0 1px rgba(39,44,49,0.10), 0 3px 16px rgba(39, 44, 49,0.07);
+                box-shadow: 0 0 1px rgba(39, 44, 49, 0.10), 0 3px 16px rgba(39, 44, 49, 0.07);
                 transition: all 0.3s ease;
                 transform: translate3D(0, -1px, 0);
             }
@@ -106,51 +106,47 @@
     .home-template {
 
         .posts {
-        
+
             .post {
-             
+
                 &:nth-child(6n+1) {
                     display: flex;
                     flex-direction: row;
                     flex: 1 1 100%;
-        
+
                     .post__img-link {
                         position: relative;
                         flex: 1 1 auto;
                         border-radius: 5px 0 0 5px;
                     }
-            
+
                     .post__img {
                         position: absolute;
                         width: 100%;
                         height: 100%;
                     }
-            
+
                     .post__description {
                         padding: 2.5rem 4rem;
                         flex: 0 1 357px;
                     }
-    
+
                     .post-title {
                         font-size: $font-size-xl;
                     }
-        
+
                     .post-excerpt {
                         font-size: 2* $font-size-s;
                     }
                 }
             }
-        }  
-    } 
+        }
+    }
 
-    .tag-template {
+    .category-template {
 
         .posts {
             margin-top: -60px;
         }
     }
 }
-
-
-
-

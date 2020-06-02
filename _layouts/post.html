@@ -1,32 +1,37 @@
---- 
+---
 layout: default
-
---- 
-
+---
 
 {% include page-navigation.html %}
 <main class="page">
-    <div class="page__container">
-        <article class="page__article {% unless page.cover %}no-image{% endunless %}">
-            <section class="page__header">
-                <div class="page__metadate">
-                    <time class="page__date" datetime="{{ page.date | date:'%e %B %Y' }}">{{ page.date | date:'%e %B %Y' }}</time>
-                    <span class="divider">/</span>
-                    <a href="/tags/{{page.tag}}.html" class="page__tag">{{ page.tag }}</a>
-                </div>
-                <h1 class="page__title">{{ page.title }}</h1>
-            </section>
-            {% if page.cover %}
-                <div class="page__cover" style="background-image: url(/{{ site.baseurl }}{{ page.cover }})"></div>
-            {% endif %}
-            <section class="page__content">
-                <div class="page__markdown">
-                    {{ content }}
-                </div>
-            </section>
-            {% include prev-next-post.html %}
-            {% include related-posts.html %}
-        </article>
-    </div>
+  <div class="page__container">
+    <article
+      class="page__article {% unless page.cover %}no-image{% endunless %}"
+    >
+      <section class="page__header">
+        <div class="page__metadate">
+          <time class="page__date" datetime="{{ page.date | date:'%e %B %Y' }}"
+            >{{ page.date | date:'%e %B %Y' }}</time
+          >
+          <span class="divider">/</span>
+          <a href="/categories/{{page.category}}.html" class="page__category"
+            >{{ page.category }}</a
+          >
+        </div>
+        <h1 class="page__title">{{ page.title }}</h1>
+      </section>
+      {% if page.cover %}
+      <div
+        class="page__cover"
+        style="background-image: url(/{{ site.baseurl }}{{ page.cover }})"
+      ></div>
+      {% endif %}
+      <section class="page__content">
+        <div class="page__markdown">
+          {{ content }}
+        </div>
+      </section>
+      {% include prev-next-post.html %} {% include related-posts.html %}
+    </article>
+  </div>
 </main>
-
