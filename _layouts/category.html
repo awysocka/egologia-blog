@@ -1,20 +1,24 @@
 --- 
 layout: default
+pagination: 
+  enabled: true
 --- 
 
 {% include page-navigation.html %}
 
 <section class="page__header" {% if page.cover %} style="background-image: url(/{{ site.baseurl }}{{ page.cover }})" {% endif %}>
     <div class="page__header-content">
-        <h1 class="page__title">{{ page.name }}</h1>
+        <h1 class="page__title">{{ page.title }}</h1>
     </div>
 </section>
 
+{{content}}
+
 <main class="posts">
     <div class="posts__container">
-        {% assign filtered_posts = site.posts | where: 'category', page.name %}
-        {% for post in filtered_posts %}     
+        {% for post in paginator.posts %}     
             {% include posts-list.html %}
         {% endfor %}
     </div>
 </main>
+  

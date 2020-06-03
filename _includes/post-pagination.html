@@ -5,7 +5,7 @@
         <ul class="pagination__list">
             {% if paginator.previous_page %}
                 <li>
-                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="pagination__array">
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "/index.html", "/" }}" class="pagination__array">
                         <span class="material-icons">keyboard_arrow_left</span>
                     </a>
                 </li>
@@ -18,14 +18,14 @@
             {% if paginator.page_trail %}
                 {% for trail in paginator.page_trail %}
                     <li class="{% if page.url == trail.path %}pagination__current{% else %}pagination__item{% endif %}">
-                        <a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
+                        <a href="{{ trail.path | prepend: site.baseurl | replace: "/index.html", "/" }}" title="{{trail.title}}">{{ trail.num }}</a>
                     </li>
                 {% endfor %}
             {% endif %}
 
             {% if paginator.next_page %}
                 <li>
-                    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="pagination__array">
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "/index.html", "/" }}" class="pagination__array">
                         <span class="material-icons">keyboard_arrow_right</span>
                     </a>
                 </li>
