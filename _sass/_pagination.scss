@@ -2,19 +2,22 @@
 
 .pagination {
     margin: 0 auto;
-    padding: 0 1rem 5rem;
+    padding: 2rem 1rem 5rem;
     font-size: $font-size-m;
-    color: $color-dark-grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    &__item, &__array {
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    &__item a, &__array {
         @include pagination-item; 
         color: $color-grey;
     }
 
-    &__current {
+    &__current a {
         @include pagination-item; 
         color:$color-blue;
         font-size: 120%;
@@ -22,7 +25,7 @@
 
     .disable {
         span {
-        color: rgba($color-grey, .4);
+            color: rgba($color-grey, .4);
         }
     }
 }

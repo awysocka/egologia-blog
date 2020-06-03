@@ -1,10 +1,13 @@
 --- 
 layout: default
 class: home-template
+pagination: 
+  enabled: true
 --- 
 
 {% include header.html %}
 {% include page-navigation.html %}
+
 
 <main class="posts ">
     <div class="posts__container">
@@ -14,5 +17,4 @@ class: home-template
     </div>
 </main>
 
-
-
+{% include post-pagination.html %}
