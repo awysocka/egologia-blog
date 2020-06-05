@@ -3,7 +3,7 @@ layout: post
 cover: assets/img/img2.jpg
 title: Świeci słońce
 date: 2020-05-13 10:18:00
-tag: pogoda
+tag: [ pogoda, jutro, warszawa ]
 category: pogoda
 class: post-template
 ---
