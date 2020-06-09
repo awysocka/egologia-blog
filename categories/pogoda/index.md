@@ -6,5 +6,5 @@ cover: assets/img/img1.jpg
 pagination: 
   enabled: true
   category: pogoda
-  permalink: '/:num/'
+  permalink: '/page/:num/'
 ---

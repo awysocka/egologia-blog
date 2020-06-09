@@ -5,10 +5,3 @@
 - name: Kontakt
   link: /contact
 - name: Kategorie
-  submenu:
-    - category: nowy
-      link: /categories/nowy
-    - category: pogoda
-      link: /categories/pogoda
-    - category: bezpostu
-      link: /categories/bezpostu

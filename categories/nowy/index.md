@@ -6,6 +6,6 @@ cover: false
 pagination: 
   enabled: true
   category: nowy
-  permalink: '/:num/'
+  permalink: '/page/:num/'
 ---
 

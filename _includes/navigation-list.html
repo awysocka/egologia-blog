@@ -1,13 +1,18 @@
 <ul class="navigation__list" id="nav-list">
     {% for item in site.data.navigation %}
         <li class="navigation__item">
-            {% if item.submenu %}
+            {% if item.name == "Kategorie" %}
+
                 <span class="navigation__link" id="submenu-opener" rel="noopener">{{ item.name }}<span class="icon-arrow-down" ></span></span>
                 <ul class="submenu__list" id="submenu">
-                {% for subitem in item.submenu %}
-                    {% assign filtered = site.posts | where: 'category', subitem.category %}
-                    {% if filtered.size > 0 %}
-                        <li class="submenu__item"><a href="{{ subitem.link }}">{{ subitem.category }}</a></li>
+                {% for cat in site.pages %}
+                    {% if cat.url contains '/categories/' %}
+                        {% unless cat.url contains '/page/' %}
+                            {% assign filtered = site.posts | where: 'category', cat.title %}
+                            {% if filtered.size > 0 %}
+                                <li class="submenu__item"><a href="{{ cat.url | replace: "/index.html", "/" }}">{{ cat.title }}</a></li>
+                            {% endif %}
+                        {% endunless %}
                     {% endif %}
                 {% endfor %}
                 </ul>
