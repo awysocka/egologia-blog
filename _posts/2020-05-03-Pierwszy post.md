@@ -1,9 +1,9 @@
 --- 
 layout: post
 cover: assets/img/img7.jpg
-title: Pierwszy post o tym dlaczego to piszę
+title: Pierwszy post o tym co znajdziesz na blogu
 date: 2020-05-03 10:18:00
-tag: nowy
+tag: [ nowy, poczatki, czesc ]
 category: nowy
 class: post-template
 

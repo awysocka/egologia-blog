@@ -11,6 +11,8 @@
     }
 
     .post {
+        display: flex;
+        flex-direction: column;
         min-height: 300px;
         margin: 0 1rem 2rem;
         background: $color-white;
