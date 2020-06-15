@@ -1,6 +1,7 @@
 --- 
 layout: post
 cover: assets/img/img5.jpg
+img-description: exemple photo
 title: Pada deszcz
 date: 2020-06-05 10:18:00
 tag: [ pogoda, jutro, warszawa ]

@@ -1,6 +1,7 @@
 --- 
 layout: post
 cover: assets/img/img7.jpg
+img-description: exemple photo
 title: Pierwszy post o tym co znajdziesz na blogu
 date: 2020-05-03 10:18:00
 tag: [ nowy, poczatki, czesc ]

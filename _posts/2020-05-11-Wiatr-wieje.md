@@ -1,6 +1,7 @@
 --- 
 layout: post
 cover: assets/img/img4.jpg
+img-description: exemple photo
 title: Wieje wiatr
 date: 2020-05-11 10:18:00
 tag: [ pogoda, jutro, warszawa ]
