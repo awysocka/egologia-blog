@@ -1,12 +1,10 @@
 --- 
-layout: post
 cover: assets/img/post-img.png
 img-description: exemple photo
 title: Markdown style
 date: 2020-06-04 10:18:00
 tag: nowy
 category: nowy
-class: post-template
 ---
 
 # H1

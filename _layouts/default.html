@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://kit.fontawesome.com/56980f51a1.js" crossorigin="anonymous"></script>
-    <title>Egologia</title>
+    <title>{{page.title}}</title>
     <link href="http://mozilla.github.io/foundation-icons/assets/foundation-icons.css" type="text/css" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-    <div class="site-container {{page.class}}">
+    <div class="site-container {% if page.class %}{{page.class}}{% else %}{{layout.class}}{% endif %}">
       
        {{ content }}
 
