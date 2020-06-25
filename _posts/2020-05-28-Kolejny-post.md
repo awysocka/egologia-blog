@@ -3,8 +3,8 @@ cover: assets/img/post-img.png
 img-description: exemple photo
 title: Kolejny post
 date: 2020-05-28 10:18:00
-tag: [ nowy ]
-category: nowy
+tag: [ społeczeństwo ]
+category: społeczeństwo
 ---
 
 

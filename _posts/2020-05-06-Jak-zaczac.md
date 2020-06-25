@@ -3,8 +3,8 @@ cover: assets/img/img6.jpg
 img-description: exemple photo
 title: Jak zacząć
 date: 2020-05-06 10:18:00
-tag: [ nowy, poczatki, czesc ]
-category: nowy
+tag: [ emocje, poczatki, czesc ]
+category: emocje
 ---
 
 

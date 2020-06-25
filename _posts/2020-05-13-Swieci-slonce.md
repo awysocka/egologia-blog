@@ -3,8 +3,8 @@ cover: assets/img/img2.jpg
 img-description: exemple photo
 title: Świeci słońce
 date: 2020-05-13 10:18:00
-tag: [ pogoda, jutro, warszawa ]
-category: pogoda
+tag: [ poznanie, jutro, warszawa ]
+category: poznanie
 ---
 
 

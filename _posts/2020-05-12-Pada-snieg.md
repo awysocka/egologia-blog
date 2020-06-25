@@ -3,8 +3,8 @@ cover: assets/img/img3.jpg
 img-description: exemple photo
 title: Pada śnieg
 date: 2020-05-12 10:18:00
-tag: [ pogoda, jutro, warszawa ]
-category: pogoda
+tag: [ neurobiologia, jutro, warszawa ]
+category: neurobiologia
 ---
 
 

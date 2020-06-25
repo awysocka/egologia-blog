@@ -3,7 +3,8 @@ layout: page
 title: Kontakt
 --- 
 
+Beata Irzycka
 
-mail: kontakt@wp.pl     
+email: kontakt@egologia.pl   
+  
 
-tel: +48 000 000 000

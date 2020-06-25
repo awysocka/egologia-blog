@@ -1,8 +1,8 @@
 ---
-title: pogoda
+title: relacje
 cover: assets/img/img1.jpg
 pagination: 
   enabled: true
-  category: pogoda
+  category: relacje
   permalink: '/page/:num/'
 ---

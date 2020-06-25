@@ -1,8 +1,8 @@
 ---
-title: nowy
+title: neurobiologia
 cover: false
 pagination: 
   enabled: true
-  category: nowy
+  category: neurobiologia
   permalink: '/page/:num/'
 ---
