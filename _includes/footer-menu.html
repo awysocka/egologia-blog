@@ -1,12 +1,11 @@
-
-    <ul class="footer__list">
-        {% for item in site.data.footer-menu %}
-            <li class="footer__item">
-                {% if item.link == "/" %}
-                    <a href="{{ item.link }}" class="footer__link">{{ item.name }}</a>
-                {% else %}
-                    <a href="{{ item.link }}" class="footer__link" target="_blank" rel="noopener">{{ item.name }}</a>
-                {% endif %}
-            </li>
-        {% endfor %}
-    </ul>
+<ul class="footer__list">
+    <li class="footer__item">
+        <a href="/" class="footer__link">Ostatnie posty</a>
+    </li>
+{% for item in site.data.social-media-link %}
+    <li class="footer__item">
+        <a href="{{ item.link }}" class="footer__link" target="_blank" rel="noopener">{{ item.name }}</a>
+    </li>
+{% endfor %}
+</ul>
+  

@@ -1,5 +1,7 @@
 <ul class="navigation__social-media">
-    <li class="social-media__item"><a href="/" class="social-media__link" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-    <li class="social-media__item"><a href="/" class="social-media__link" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-    <li class="social-media__item"><a href="/" class="social-media__link" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+    {% for item in site.data.social-media-link %}
+        <li class="social-media__item">
+            <a href="{{ item.link }}" class="social-media__link" target="_blank" rel="noopener" aria-label="{{item.label}}"><i class="{{item.icon}}"></i></a>
+        </li>
+    {% endfor %}
 </ul>

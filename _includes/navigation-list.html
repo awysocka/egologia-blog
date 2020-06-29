@@ -10,7 +10,7 @@
                         {% unless cat.url contains '/page/' %}
                             {% assign filtered = site.posts | where: 'category', cat.title %}
                             {% if filtered.size > 0 %}
-                                <li class="submenu__item"><a href="{{ cat.url | replace: "/index.html", "/" }}">{{ cat.title }}</a></li>
+                                <li class="submenu__item"><a href="{{ cat.url | replace: "/index.html", "/" }}" >{{ cat.title }}</a></li>
                             {% endif %}
                         {% endunless %}
                     {% endif %}
