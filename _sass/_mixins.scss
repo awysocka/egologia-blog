@@ -29,7 +29,7 @@
         @media screen and (min-width: 1200px) {@content}
     };
 
-    @if $breakpoints == touch-device {
+    @if $breakpoints == not-touch-device {
         @media (hover: hover) {@content}
     }
 

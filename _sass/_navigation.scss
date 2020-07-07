@@ -43,42 +43,33 @@
 
 
         .submenu {
+            visibility: hidden;
+            height: 0;
+            overflow: hidden;
 
             &__list {
-                max-height: 0;
                 min-width: 150px;
                 max-width: 250px;
-                margin-top: 1rem;
-                padding: 1rem 4rem 2rem 1rem;
-                background-color: $color-blue;
+                padding: 2rem 4rem 2rem 1rem;
                 list-style-type: none;
-                position: initial;
-                flex-direction: column;
-                opacity: 0;
-                visibility: hidden;
-                transition: all .3s ease;
-                transform: translateY(-10px);
-
-                &--active {
-                    max-height: initial;
-                    list-style-type: none;
-                    opacity: 1;
-                    visibility: visible;  
-                    transform: translateY(0px);           
-                }
             }
         
             &__item {
                 font-size: 60%;
-                margin: .5rem;
-        
+                margin-bottom: 2rem;
+
                 a {
                     display: block;
                     color: $color-white;
-                    padding: .5rem;
                     font-size: inherit;      
-                }
+                }  
             }
+
+            &--active {
+                visibility: visible;  
+                height: auto;                    
+            }
+
         }
     }
 
@@ -242,7 +233,7 @@
     }
 }
 
-@include respond (touch-device) {
+@include respond (not-touch-device) {
 
     .navigation {
 

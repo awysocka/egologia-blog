@@ -33,7 +33,7 @@ window.addEventListener('touchstart', function() {
 
   submenuOpener.onclick = () => {
     event.stopPropagation(); 
-    submenu.classList.toggle('submenu__list--active');
+    submenu.classList.toggle('submenu--active');
   };
   
 });
