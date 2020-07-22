@@ -22,12 +22,30 @@
     }
 }
 
+@include respond(tab-port) {
+    .home-header {
+
+        &__hero {
+
+            img {
+                max-height: 120px;
+                height: 15vh;
+            }
+        }
+    }
+}
+
 @include respond(tab-land) {
     .home-header {
         padding-bottom: 80px;
 
         &__hero {
             margin: 0 auto 4rem;
+
+            img {
+                max-height: 150px;
+                height: 15vh;
+            }
         }
     }
 }
