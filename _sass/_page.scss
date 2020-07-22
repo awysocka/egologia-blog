@@ -219,6 +219,7 @@
         &__title {
             display: block;
             text-transform: capitalize;
+            color: $color-light-pink;
         }
     }
 }
@@ -310,7 +311,6 @@
 
         &__container {
             padding: 0 4rem;
-
         }
 
         &__cover {
@@ -322,7 +322,6 @@
             max-width: 920px;
             font-size: $font-size-xl;
 
-    
             h1 {
                 font-size: 3*$font-size-s;
                 line-height: 3.5rem;
@@ -416,9 +415,7 @@
     }
 }
 
-
 //  + POST STYLES
-
 
 .page {
 

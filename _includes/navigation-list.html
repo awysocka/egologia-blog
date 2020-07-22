@@ -2,7 +2,6 @@
     {% for item in site.data.navigation %}
         <li class="navigation__item">
             {% if item.name == "Kategorie" %}
-
                 <span class="navigation__link" id="submenu-opener" rel="noopener">{{ item.name }}<span class="icon-arrow-down" ></span>
                 <div class="submenu" id="submenu">
                     <ul class="submenu__list">
@@ -23,5 +22,4 @@
             {% endif %}
         </li>
     {% endfor %}
-   
 </ul>

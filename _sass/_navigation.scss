@@ -41,7 +41,6 @@
     &__item {
         margin-bottom: 3rem;
 
-
         .submenu {
             visibility: hidden;
             height: 0;
@@ -69,7 +68,6 @@
                 visibility: visible;  
                 height: auto;                    
             }
-
         }
     }
 
@@ -96,8 +94,7 @@
     display: none;
 }
 
-
-//  // MEDIA QUERIES
+// MEDIA QUERIES
 
  @include respond(tab-port) {
 
@@ -210,7 +207,6 @@
 .icon-arrow-down {
     margin-left: 5px;
 }
-
 
 @include respond(tab-land) {
 
