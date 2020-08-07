@@ -1,5 +1,5 @@
 <ul class="navigation__social-media">
-    {% for item in site.data.social-media-link %}
+    {% for item in site.data.social-media-link.items %}
         <li class="social-media__item">
             <a href="{{ item.link }}" class="social-media__link" target="_blank" rel="noopener" aria-label="{{item.label}}"><i class="{{item.icon}}"></i></a>
         </li>

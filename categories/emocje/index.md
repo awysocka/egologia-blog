@@ -1,8 +1,8 @@
 ---
 title: emocje
 cover: false
-pagination: 
+pagination:
   enabled: true
   category: emocje
-  permalink: '/page/:num/'
+  permalink: /page/:num/
 ---

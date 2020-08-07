@@ -1,6 +1,6 @@
 ---
 title: relacje
-cover: assets/img/img1.jpg
+cover: /assets/img/uploads/img1.jpg
 pagination: 
   enabled: true
   category: relacje

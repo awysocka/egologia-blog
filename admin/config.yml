@@ -1,7 +1,11 @@
 backend:
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-
+  name: gitlab
+  repo: awysocka/egologia-blog # Path to GitLab repository
+  auth_type: implicit # Required for implicit grant
+  app_id: 8826f1f3bcecb94a4d64185c52dbdeee85da63d94ea7636cc83bf1ad5347922a # Application ID from GitLab settings
+  
+publish_mode: editorial_workflow
+logo_url: https://anna.you2.pl/assets/img/logo.png
 media_folder: "assets/img/uploads" # Media files will be stored in the repo under images/uploads
 
 collections:
@@ -9,11 +13,48 @@ collections:
   label: "Posts" # Used in the UI
   folder: "_posts" # The path to the folder where the documents are stored
   create: true # Allow users to create new documents in this collection
+  label_singular: post
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
     - {label: "Cover", name: "cover", widget: "image"}
+    - {label: "Image description", name: "img-description", widget: "string"}
     - {label: "Title", name: "title", widget: "string", required: true}
     - {label: "Publish Date", name: "date", widget: "datetime", required: true}
     - {label: "Tags", name: "tags", widget: "list"}
-    - {label: "Category", name: "category", widget: "string", required: true}
+    - {label: "Category", name: "category", widget: "select", options: ["emocje", "neurobiologia", "poznanie", "społeczeństwo", "relacje", "natura"]}
     - {label: "Body", name: "body", widget: "markdown", required: true}
+
+- name: "pages"
+  label: "Pages"
+  files:
+    - file: "/about/index.md"
+      label: "About"
+      name: "about"
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "markdown"}
+    - file: "/contact/index.md"
+      label: "Contact"
+      name: "contact"
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "markdown"}
+
+- name: "social-media"
+  label: "Social media"
+  editor:
+    preview: false
+  files:
+    - name: "Social-media-items"
+      label: "Social media"
+      file: "_data/social-media-link.yml"
+      fields:
+        - name: "items"
+          label: "Social media profiles"
+          label_singular: "new profile"
+          widget: "list"
+          fields:
+            - { label: "Name", name: "name", widget: "select", options: ["Facebook", "Instagram", "Twitter", "LinkedIn", "Snapchat", "Reddit", "YouTube", "TikTok"] }
+            - { label: "Link", name: "link", widget: "string" }
+            - { label: "Label", name: "label", widget: "select", options: ["facebook", "instagram", "twitter", "linkedin", "snapchat", "reddit", "youtube", "tiktok"]}
+            - { label: "Icon", name: "icon", widget: "select", options: ["fab fa-facebook-f", "fab fa-instagram", "fab fa-twitter", "fab fa-linkedin-in", "fab fa-snapchat-ghost", "fab fa-reddit-alien", "fab fa-youtube", "fab fa-tiktok"]}

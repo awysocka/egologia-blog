@@ -55,13 +55,16 @@
         
             &__item {
                 font-size: 60%;
-                margin-bottom: 2rem;
 
                 a {
                     display: block;
                     color: $color-white;
                     font-size: inherit;      
                 }  
+            }
+
+            &__item:not(:last-child) {
+                margin-bottom: 2rem;
             }
 
             &--active {
@@ -93,6 +96,7 @@
 .page-logo {
     display: none;
 }
+
 
 // MEDIA QUERIES
 
@@ -251,4 +255,3 @@
         }
     }
 }
-

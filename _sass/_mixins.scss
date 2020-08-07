@@ -12,17 +12,17 @@
     margin: 0 .5rem;
 }
 
-
 @mixin respond($breakpoints) {
     @if $breakpoints == small-phone {
         @media screen and (max-width: 400px) {@content}
     };
+    
     @if $breakpoints == tab-port {
-        @media screen and (min-width: 700px) {@content}
+        @media screen and (min-width: 650px) {@content}
     };
 
     @if $breakpoints == tab-land {
-        @media screen and (min-width: 960px) {@content}
+        @media screen and (min-width: 950px) {@content}
     };
 
     @if $breakpoints == desktop {
@@ -31,6 +31,5 @@
 
     @if $breakpoints == not-touch-device {
         @media (hover: hover) {@content}
-    }
-
+    };
 }

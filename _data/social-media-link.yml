@@ -1,8 +1,9 @@
-- name: Instagram
-  link: https://www.instagram.com/egologia/
-  label: instagram
-  icon: fab fa-instagram
-- name: Twitter
-  link: https://twitter.com/egologia_pl
-  label: twitter
-  icon: fab fa-twitter
+items:
+  - name: Instagram
+    link: https://www.instagram.com/egologia/
+    label: instagram
+    icon: fab fa-instagram
+  - name: Twitter
+    link: https://twitter.com/egologia_pl
+    label: twitter
+    icon: fab fa-twitter

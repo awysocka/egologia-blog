@@ -1,9 +1,10 @@
 --- 
-cover: assets/img/post-img.png
+cover: /assets/img/uploads/post-img.png
 img-description: exemple photo
 title: Markdown style
 date: 2020-06-04 10:18:00
-tag: emocje
+tags: 
+  - emocje
 category: emocje
 ---
 
@@ -53,14 +54,10 @@ This is a very long line that will still be quoted properly when it wraps. Oh bo
 
 
 Inline-style: 
-![alt text](/assets/img/img1.jpg)
+![alt text](/assets/img/uploads/img1.jpg)
 
 
 | Syntax | Description |
 | ----------- | ----------- |
 | Header | Title |
 | Paragraph | Text |
-
-
-
-

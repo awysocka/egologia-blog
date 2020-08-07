@@ -2,10 +2,10 @@
     <li class="footer__item">
         <a href="/" class="footer__link">Ostatnie posty</a>
     </li>
-{% for item in site.data.social-media-link %}
-    <li class="footer__item">
-        <a href="{{ item.link }}" class="footer__link" target="_blank" rel="noopener">{{ item.name }}</a>
-    </li>
-{% endfor %}
+    {% for item in site.data.social-media-link.items %}
+        <li class="footer__item">
+            <a href="{{ item.link }}" class="footer__link" target="_blank" rel="noopener">{{ item.name }}</a>
+        </li>
+    {% endfor %}
 </ul>
   

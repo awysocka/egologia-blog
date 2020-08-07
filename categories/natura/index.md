@@ -4,5 +4,5 @@ cover: false
 pagination: 
   enabled: true
   category: natura
-  permalink: '/page/:num/'
+  permalink: /page/:num/
 ---

@@ -1,7 +1,13 @@
-- name: Główna
-  link: /
-- name: O mnie
-  link: /about
-- name: Kontakt
-  link: /contact
-- name: Kategorie
+items:
+  - name: Główna
+    link: /
+    submenu: false
+  - name: O mnie
+    link: /about
+    submenu: false
+  - name: Kontakt
+    link: /contact
+    submenu: false
+  - name: Kategorie
+    link: false
+    submenu: true

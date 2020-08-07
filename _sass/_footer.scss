@@ -71,13 +71,13 @@
             order: 1;
         }
     }  
- }
+}
 
- @include respond(tab-land) {
-     .footer {
+@include respond(tab-land) {
+    .footer {
 
-         &__container {
-            padding: 0 4rem;
-         }
-     }
- }
+        &__container {
+        padding: 0 4rem;
+        }
+    }
+}

@@ -1,13 +1,14 @@
 --- 
-cover: assets/img/img6.jpg
+cover: /assets/img/uploads/img6.jpg
 img-description: exemple photo
 title: Jak zacząć
 date: 2020-05-06 10:18:00
-tag: [ emocje, poczatki, czesc ]
+tags: 
+  - emocje
+  - poczatki
+  - czesc
 category: emocje
 ---
-
-
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel consequat ligula. Maecenas sem tortor, tristique sed tincidunt in, accumsan eu sapien. Donec venenatis felis ut dictum commodo. 
 

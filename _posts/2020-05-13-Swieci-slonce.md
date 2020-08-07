@@ -1,14 +1,15 @@
 --- 
-cover: assets/img/img2.jpg
+cover: /assets/img/uploads/img2.jpg
 img-description: exemple photo
 title: Świeci słońce
 date: 2020-05-13 10:18:00
-tag: [ poznanie, jutro, warszawa ]
+tags: 
+  - poznanie
+  - jutro
+  - warszawa
 category: poznanie
 ---
 
-
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel consequat ligula. Maecenas sem tortor, tristique sed tincidunt in, accumsan eu sapien. Donec venenatis felis ut dictum commodo.
 
 Aenean molestie turpis eu enim volutpat pellentesque in id neque. Phasellus venenatis eget justo eget maximus. Nullam facilisis aliquet ex. Suspendisse quis pretium turpis. Aliquam rutrum metus tincidunt mi laoreet, a gravida nulla imperdiet. In in hendrerit tellus. Nullam ultricies turpis vitae egestas porta. In mollis, orci non eleifend ullamcorper, lorem mauris finibus tortor, ut gravida tortor dolor quis mauris.
@@ -34,8 +35,3 @@ Integer sit amet ex ut magna maximus egestas. Nam gravida libero urna, ut mattis
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel consequat ligula. Maecenas sem tortor, tristique sed tincidunt in, accumsan eu sapien. Donec venenatis felis ut dictum commodo.
 
 Aenean molestie turpis eu enim volutpat pellentesque in id neque. Phasellus venenatis eget justo eget maximus. Nullam facilisis aliquet ex. Suspendisse quis pretium turpis. Aliquam rutrum metus tincidunt mi laoreet, a gravida nulla imperdiet. In in hendrerit tellus. Nullam ultricies turpis vitae egestas porta. In mollis, orci non eleifend ullamcorper, lorem mauris finibus tortor, ut gravida tortor dolor quis mauris.
-
-
-
-
-

@@ -1,7 +1,7 @@
 <ul class="navigation__list" id="nav-list">
-    {% for item in site.data.navigation %}
+    {% for item in site.data.navigation.items %}
         <li class="navigation__item">
-            {% if item.name == "Kategorie" %}
+            {% if item.submenu == true %}
                 <span class="navigation__link" id="submenu-opener" rel="noopener">{{ item.name }}<span class="icon-arrow-down" ></span>
                 <div class="submenu" id="submenu">
                     <ul class="submenu__list">
