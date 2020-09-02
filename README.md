@@ -7,7 +7,7 @@ Personal blog for Beata Irzycka.
 * css 3
 * sass
 * netlify CMS
-* vanilla js ES6
+* js(ES6)
 
 ## live
 * Here is a working website: available soon.
